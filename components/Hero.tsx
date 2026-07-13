@@ -9,11 +9,8 @@ export default function Hero() {
     <section className="relative min-h-screen bg-bg-tint flex flex-col overflow-hidden" id="home">
       {/* Floating decorative elements */}
       <FloatingElement emoji="🍓" className="top-24 left-8 md:left-16 opacity-80" size="text-3xl md:text-4xl" floatClass="float-1" />
-      <FloatingElement emoji="🍰" className="top-32 right-10 md:right-24 opacity-70" size="text-2xl md:text-3xl" floatClass="float-2" />
       <FloatingElement emoji="🍫" className="bottom-40 left-12 md:left-32 opacity-60" size="text-2xl" floatClass="float-3" />
-      <FloatingElement emoji="🌸" className="top-64 right-8 md:right-16 opacity-80" size="text-xl md:text-2xl" floatClass="float-4" />
       <FloatingElement emoji="🫐" className="top-48 left-1/3 opacity-50" size="text-xl" floatClass="float-5" />
-      <FloatingElement emoji="🍃" className="bottom-60 right-20 md:right-40 opacity-70" size="text-lg md:text-xl" floatClass="float-2" />
       <FloatingElement emoji="⭐" className="top-72 left-10 opacity-60" size="text-lg" floatClass="float-4" />
 
       {/* Background soft blobs */}
@@ -144,7 +141,7 @@ export default function Hero() {
             {/* Main hero cake image — overflows upward like reference design */}
             <div className="relative w-full max-w-sm lg:max-w-none h-full">
               <Image
-                src="/images/hero_cake.jpg"
+                src="/images/hero_cake.png"
                 alt="Premium wedding and birthday cake — Cake Queen Medinipur"
                 fill
                 priority
@@ -152,34 +149,6 @@ export default function Hero() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-
-            {/* Floating card — social proof */}
-            <motion.div
-              className="absolute bottom-8 -left-4 lg:-left-8 bg-white rounded-2xl px-4 py-3 shadow-card flex items-center gap-3"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.1, duration: 0.6 }}
-            >
-              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-2xl">🎂</div>
-              <div>
-                <p className="font-heading font-800 text-sm text-text-dark">Custom Cakes</p>
-                <p className="font-body text-xs text-text-muted">Starting ₹699/kg</p>
-              </div>
-            </motion.div>
-
-            {/* Floating card — delivery */}
-            <motion.div
-              className="absolute top-12 -right-2 lg:-right-4 bg-white rounded-2xl px-4 py-3 shadow-card flex items-center gap-3"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.3, duration: 0.6 }}
-            >
-              <div className="w-10 h-10 rounded-xl bg-green-50 flex items-center justify-center text-2xl">🚚</div>
-              <div>
-                <p className="font-heading font-800 text-sm text-text-dark">Free Delivery</p>
-                <p className="font-body text-xs text-text-muted">Within Midnapore</p>
-              </div>
-            </motion.div>
           </motion.div>
 
         </div>
