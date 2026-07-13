@@ -7,11 +7,6 @@ import { CreamDrip, FloatingElement } from "@/components/ui/shared";
 export default function Hero() {
   return (
     <section className="relative min-h-screen bg-bg-tint flex flex-col overflow-hidden" id="home">
-      {/* Floating decorative elements */}
-      <FloatingElement emoji="🍓" className="top-24 left-8 md:left-16 opacity-80" size="text-3xl md:text-4xl" floatClass="float-1" />
-      <FloatingElement emoji="🍫" className="bottom-40 left-12 md:left-32 opacity-60" size="text-2xl" floatClass="float-3" />
-      <FloatingElement emoji="🫐" className="top-48 left-1/3 opacity-50" size="text-xl" floatClass="float-5" />
-      <FloatingElement emoji="⭐" className="top-72 left-10 opacity-60" size="text-lg" floatClass="float-4" />
 
       {/* Background soft blobs */}
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none" aria-hidden />
