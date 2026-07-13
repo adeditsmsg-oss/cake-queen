@@ -136,7 +136,7 @@ export default function Hero() {
             {/* Main hero cake image — overflows upward like reference design */}
             <div className="relative w-full max-w-sm lg:max-w-none h-full">
               <Image
-                src="/images/hero_cake.png"
+                src="/images/hero_cake_v2.png"
                 alt="Premium wedding and birthday cake — Cake Queen Medinipur"
                 fill
                 priority
